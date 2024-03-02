@@ -21,8 +21,7 @@ Input:
       #!/bin/sh
       sh /Applications/ScreenAgent.app/Contents/Resources/install-screen-agent.sh REGION_TYPE=%REGION_TYPE% ACCESS_KEY_ID=%ACCESS_KEY_ID% ACCESS_KEY_SECRET=%ACCESS_KEY_SECRET% WEB_PROXY=%WEB_PROXY%
 
-Process:
-  - Processor: MunkiImporter
-    Arguments:
-      pkg_path: "%pathname%"
-      repo_subdirectory: "%MUNKI_REPO_SUBDIR%"
+#Process:
+#  - Processor: MunkiImporter
+#    Arguments:
+#      repo_subdirectory: "%MUNKI_REPO_SUBDIR%"
