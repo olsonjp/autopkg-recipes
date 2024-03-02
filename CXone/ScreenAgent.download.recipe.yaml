@@ -1,16 +1,16 @@
 Description: Downloads the latest version of CXone ScreenAgent for macOS
-Identifier: com.github.williamtheaker.autopkg.download.ScreenAgent
+Identifier: com.github.olsonjp.autopkg.download.ScreenAgent
 MinimumVersion: "2.3" # First AutoPkg version with YAML recipe support
 
 Input:
   NAME: CXone ScreenAgent
 
 Process:
-  - Processor: URLTextSearcher
-    Comment: "Scrape DMG download URI."
-    Arguments:
-      url: https://downloads.incontact.com
-      re_pattern: https:\/\/staticfiles\.niceincontact\.com\/cxone-downloads\/ScreenAgent-64bit-[\d\.]*.dmg
+#  - Processor: URLTextSearcher
+#    Comment: "Scrape DMG download URI."
+#    Arguments:
+#      url: https://downloads.incontact.com
+#      re_pattern: https:\/\/staticfiles\.niceincontact\.com\/cxone-downloads\/ScreenAgent-64bit-[\d\.]*.dmg
 
   - Processor: URLDownloader
     Comment: "Download DMG."
